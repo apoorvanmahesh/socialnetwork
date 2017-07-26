@@ -8,10 +8,13 @@ class User():
 
 
 while True:
+    #add usernames
     user_input = input("What is your username?")
     x = User(user_input)
     print(x.name)
     username.append(x)
+    #Invitations...reference list of usernames and add them in order to messages
+    
     # if user_input not in username:
     #     username.append(x)
     # elif user_input in username:

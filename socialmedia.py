@@ -13,8 +13,8 @@ while True:
     x = User(user_input)
     print(x.name)
     username.append(x)
-    #Invitations...reference list of usernames and add them in order to messages
-    
+    #Invitations...reference list of usernames and add them in order to message
+    print("Do you want to invite someone to chat?")
     # if user_input not in username:
     #     username.append(x)
     # elif user_input in username:

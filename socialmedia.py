@@ -1,20 +1,35 @@
 #user_input = input("What is your username?")
-username=[]
-
+usernameArray=[]
+addName = True
 class User():
     def __init__(self,name):
         self.name = name
-
+A = User("Vee")
+B = User("Maddie")
+C = User("Nisha")
+D= User("Apoorva")
+usernameArray.append(A)
+usernameArray.append(B)
+usernameArray.append(C)
+usernameArray.append(D)
 
 
 while True:
-    #add usernames
+    addName = True
     user_input = input("What is your username?")
     x = User(user_input)
-    print(x.name)
-    username.append(x)
-    #Invitations...reference list of usernames and add them in order to message
-    print("Do you want to invite someone to chat?")
+    #print(usernameArray[0].name)
+    for i in range (len(usernameArray)):
+        print(usernameArray[i].name)
+        if user_input == usernameArray[i].name:
+            addName = False
+            print("Sorry, your username has already been taken. Please choose another one.")
+            break
+    if addName == True:
+        usernameArray.append(x)
+
+        #print(usernameArray[i].name)
+
     # if user_input not in username:
     #     username.append(x)
     # elif user_input in username:

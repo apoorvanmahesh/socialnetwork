@@ -41,7 +41,7 @@ while True:
 
     for i in range (len(usernameArray)):
         print(usernameArray[i].name)
-    print("You can connect with people")
+    print("Thanks for making an account with us! You can now conenct with other people!")
 
     yourName = input("What is your username?")
     index = None
@@ -52,7 +52,7 @@ while True:
             userFound = True
             break
     if userFound == False:
-        print("Sorry, the username does not exist")
+        print("Sorry, that username does not exist.")
     else:
         inviteName = input("Who do you want to connect with?")
         usernameArray[index].addConnection(inviteName)
